@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_7</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#border {
+	margin: 5px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<br>
+	<b>H. <u>CHECK-IN DETAILS:#</u></b>
+	<table style="width: 100%">
+		<tr>
+			<td>Subject No. allotted:</td>
+			<td>&emsp;&emsp;&emsp;__________________&emsp;&emsp;&emsp;</td>
+		</tr>
+		<tr>
+			<td>Locker key issued & Locker number:</td>
+			<td>&emsp;&emsp;&emsp;__________________&emsp;&emsp;&emsp;</td>
+		</tr>
+		<tr>
+			<td>Baggage check</td>
+			<td><input type="checkbox">Yes&emsp;|&emsp;<input
+				type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>Body search done</td>
+			<td><input type="checkbox">Yes&emsp;|&emsp;<input
+				type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>Utility kit & Uniform issued</td>
+			<td><input type="checkbox">Yes&emsp;|&emsp;<input
+				type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>Subject ID card issued</td>
+			<td><input type="checkbox">Yes&emsp;|&emsp;<input
+				type="checkbox"></td>
+		</tr>
+	</table>
+	<br>
+	<i># Capture the subject signature in 'ACTIVITY CONFIRMATION RECORD
+		BY SUBJECTS'</i>
+	<br>
+	<br>
+	<p>
+		Check-in time *: &emsp;&emsp;<input type="time" ng-model=" ">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Recorded
+		by: <input type="file" ng-mode="">
+	</p>
+	<br>
+	<p>* Record the check-in date and time also on cover page of CRF.</p>
+<br>
+<br>
+<br>
+<footer>
+<div align="left">Page 6 of 15</div>
+<div align="right"> &emsp;Reviewed by : <input type="file" ng-model=" "><br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br></div>
+
+	</footer>
+</body>
+</html>

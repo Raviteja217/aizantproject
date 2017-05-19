@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_3</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#yn {
+	margin-right: 3cm;
+	margin-left: 3cm;
+}
+
+#box {
+	width: 320px;
+	padding: 10px;
+	border: 3px solid gray;
+	margin-right: 5cm;
+	margin-left: 5cm;
+	margin-top: 1cm;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<center>
+		<p>(Put &#10004; tick mark on appropriate box)</p>
+	</center>
+	<b>A. </b>
+	<b>Is the subject verified for Volunteer Cross Participation?</b>
+	&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; 
+	<input type="checkbox">Yes &emsp;&emsp;
+	&emsp;&emsp; 
+	<input type="checkbox">No &emsp;&emsp;
+	&emsp;&emsp;
+	<input type="checkbox">N/A
+	<br> (applicable for period-1)
+	<br>
+	<br>
+	<b>B.</b>
+	<b> Is the subject eligible to participate in the study?</b>
+		&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; <input type="checkbox">Yes
+		&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;<input type="checkbox">No
+	<br>
+	<br>
+	<b>C.</b>
+	<b><u>RESTRICTION COMPLIANCE</u>
+	</b>
+	<br>
+	<br>
+
+	<table style="width: 100%">
+		<tr>
+			<td>1. Have you taken any prescribed medication in the last 14
+				days prior to dosing / since previous period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>2. Have you taken any OTC medicinal products, herbal
+				products for therapeutic purpose in the last 07 days prior to dosing
+				/ since previous period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+
+		</tr>
+		<tr>
+			<td>Have you consumed any caffeine and xanthine-containing foods
+				or beverages (i.e. coffee, tea, chocolate, and caffeine-containing
+				sodas, colas, etc.) in the last 48.00 hours prior to check-in/ since
+				previous period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>4. Have you consumed any Grapefruit juice or related
+				products in the last 72.00 hours prior to check-in/ since previous
+				period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+
+		</tr>
+		<tr>
+			<td>5. Have you consumed / chewed any tobacco containing
+				products {pan masala, gutkha, supari (betel nut)} etc. in the last
+				48.00 hours prior to check-in/ since previous period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+		</tr>
+		<tr>
+			<td>6. Have you participated in any drug research study within
+				past 90 days / since previous period check-out?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+
+		</tr>
+		<tr>
+			<td>7. Have you donated blood within past 90 days / since
+				previous period check-out??</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+
+		</tr>
+	</table>
+	<br>
+	<table style="width: 100%">
+		<tr>
+			<td>Does the subject comply with Restriction compliance?</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+
+		</tr>
+	</table>
+	<br>
+	<p>Comments:</p>
+	<textarea rows="5" cols="175">
+</textarea>
+	<br>
+	<div align="left">
+			<br> &emsp;Recorded by : <input type="file"><br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+		<br>
+		
+	<footer>
+	<div align="left">Page 2 of 15</div>
+		<div align="right">
+			<br> &emsp;Reviewed by : <input type="file"><br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+	</footer>
+</body>
+</html>
