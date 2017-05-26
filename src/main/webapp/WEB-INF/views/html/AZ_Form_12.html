@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_12</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#yn {
+	margin-right: 3cm;
+	margin-left: 3cm;
+}
+
+#box {
+	width: 320px;
+	padding: 10px;
+	border: 3px solid gray;
+	margin-right: 5cm;
+	margin-left: 5cm;
+	margin-top: 1cm;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<b><u>N. SAFETY SAMPLE COLLECTION</u></b>
+	<span><strong>(Applicable for period-1 check-out):</strong></span>
+	<br>
+	<br>
+	<table style="width: 100%">
+		<tr>
+		<tr>
+			<td>Blood sample collected (05 mL)</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+			<td><table style="width: 100%">
+					<tr>
+						<td>date</td>
+						<td>time</td>
+						<td>Collected by<br>(Sign&Date)
+						</td>
+					</tr>
+					<tr>
+						<td><input type="date" ng-model=""></td>
+						<td><input type="time" ng-model=""></td>
+						<td><input type="file" ng-model=""></td>
+					</tr>
+				</table></td>
+		</tr>
+
+	</table>
+	<br>
+	<b><u>CHECK-OUT ECG</u></b>
+	<span><strong>(Applicable for period-2 only):</strong></span>
+	<br>
+	<br>
+	<table style="width: 100%">
+		<tr>
+			<td>Time</td>
+			<td>Date</td>
+			<td>ECG Recorded</td>
+			<td>Recorded by (Sign&Date)</td>
+		</tr>
+		<tr>
+			<td><input type="time" ng-model=""></td>
+			<td><input type="date" ng-model=""></td>
+			<td><input type="checkbox">Yes<input type="checkbox">No
+				<input type="checkbox">N/A</td>
+			<td><input type="file" ng-model=""></td>
+		</tr>
+	</table>
+	<br> Note:
+	<ul>
+		<li>Note: ECG will be recorded before check out of the last
+			period (check out ECG can be recorded prior to the last sample
+			collection/ check out medical examination or as per physician
+			discretion).</li>
+	</ul>
+
+	<footer>
+	<div align="left">Page 11 of 15</div>
+		<div align="right">
+			<br> &emsp;Reviewed by : <input type="file" ng-model=""> <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_5</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#border {
+	margin: 5px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<br>
+
+	<div class="small">
+		<b>b)</b>&emsp;&emsp;<b><u>Test for urine hCG (Applicable for
+				female subjects only)</u></b> <br>
+
+	</div>
+	<br>
+	<br>
+
+
+	<table style="width: 100%">
+		<tr>
+			<td>Urine hCG Test Strip - Make & Batch No.</td>
+			<td>Date of Expiry</td>
+			<td>Start Time</td>
+			<td>Read Time</td>
+			<td>Results (N/P)*</td>
+			<td>Performed by (Sign & Date)</td>
+			<td>Verified by(sign&date)</td>
+
+		</tr>
+		<tr>
+			<td><input type="text" ng-model=""></td>
+			<td><input type="date" ng-model=""></td>
+			<td><input type="time" ng-model=""></td>
+			<td><input type="time" ng-model=""></td>
+			<td><input type="text" ng-model=""></td>
+			<td><input type="file" ng-model=""></td>
+			<td><input type="file" ng-model=""></td>
+
+		</tr>
+	</table>
+	<span>*N- Negative</span> &emsp;&emsp;&emsp;
+	<span>P-Positive</span>
+	<br>
+	<br>
+	<b>ii) </b> &emsp;&emsp;
+	<b><u>End of the study**</u></b>
+	<br>
+	<br>
+	<table style="width: 100%">
+		<tr>
+		<tr>
+			<td>Urine sample collected for hCG test</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+			<td><table style="width: 100%">
+					<tr>
+						<td>date</td>
+						<td>time</td>
+					</tr>
+					<tr>
+						<td><input type="date" ng-model=""></td>
+						<td><input type="time" ng-model=""></td>
+					</tr>
+				</table></td>
+		</tr>
+
+	</table>
+	<br>
+	<b>a)</b>&emsp;&emsp;
+	<b><u>Test for urine hCG (Applicable for female subjects only)</u></b>
+	<br>
+	<br>
+	<div id="border">
+		<table style="width: 100%">
+			<tr>
+				<td>Urine hCG Test Strip - Make & Batch No.</td>
+				<td>Date of Expiry</td>
+				<td>Start Time</td>
+				<td>Read Time</td>
+				<td>Results (N/P)*</td>
+				<td>Performed by (Sign & Date)</td>
+				<td>Verified by(sign&date)</td>
+
+			</tr>
+			<tr>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="time" ng-model=""></td>
+				<td><input type="time" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="file" ng-model=""></td>
+				<td><input type="file" ng-model=""></td>
+
+			</tr>
+		</table>
+		<span>*N- Negative</span> &emsp;&emsp;&emsp; <span>P-Positive</span> <br>
+		<P>** Applicable for period-2</P>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<footer>
+	<div align="left">Page 4 of 15</div>
+		<div align="right">
+			<br> &emsp;Reviewed by : <input type="file" ng-model="">
+			<br> &emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+	</footer>
+
+</body>
+</html>

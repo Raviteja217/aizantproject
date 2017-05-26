@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_4</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#border {
+	margin: 5px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+<br>	
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<br>
+
+	<div class="small">
+		<b>D. <u>ICF OBTAINED</u></b> <br> <span>(Applicable for period
+			1)</span> &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; <input type="checkbox">Yes
+		&emsp; <input type="checkbox">No &emsp; <input type="checkbox">N/A
+		<div align="right">
+		<br> &emsp;Recorded by _____________________ <br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>(Sign & Date) <br>
+	</div>
+		<!-- 	<p>&emsp;&emsp;(applicable for period 1)</p> -->
+
+	</div>
+	<hr>
+	<b>E. <u>ALCOHOL BREATH TEST</u></b>
+
+
+	<table style="width: 100%">
+		<tr>
+			<td>TimePoint</td>
+			<td>Date</td>
+			<td>Time</td>
+			<td>BAC*(%)</td>
+			<td>Result</td>
+			<td>Instrument ID</td>
+			<td>Performed by(sign&date)</td>
+			<td>Comments</td>
+		</tr>
+		<tr>
+			<td>Check-in</td>
+			<td><input type="date" ng-model=""></td>
+			<td><input type="time" ng-model=""></td>
+			<td><input type="text" ng-model=""></td>
+			<td><input type="checkbox">Positive <br> <input
+				type="checkbox">Negative</td>
+			<td><input type="number" ng-model=""></td>
+			<td><input type="file" ng-model=""></td>
+			<td><input type="text" ng-model=""></td>
+		</tr>
+	</table>
+	<span>*BAC=Blood Alcohol Concentration</span>&emsp;&emsp;&emsp;
+	<span>BAC>=0.01 is positive</span> &emsp;&emsp;&emsp;
+	<span>BAC>=0.00 is negative</span>
+
+	<br>
+	<br>
+	<b>F. <u>URIN DRUG SCREEN</u></b>
+	<hr align="left" width="30%">
+
+	<span>1) At the time of check-in:</span>
+	<table style="width: 100%">
+		<tr>
+		<tr>
+			<td>urin sample collected</td>
+			<td><input type="checkbox">Yes</td>
+			<td><input type="checkbox">No</td>
+			<td><table style="width: 100%">
+					<tr>
+						<td>date</td>
+						<td>time</td>
+					</tr>
+					<tr>
+						<td><input type="date" ng-model=""></td>
+						<td><input type="time" ng-model=""></td>
+					</tr>
+				</table></td>
+		</tr>
+
+	</table>
+	<br>
+	<span>a) Test for urin drug screen</span>
+	<br>
+	<div id="border">
+		<table style="width: 100%">
+			<tr>
+				<td>Drugs of abuse Test Strip_Make&Batch No</td>
+				<td>Date of expiry</td>
+				<td>Start Time</td>
+				<td>Read time</td>
+			</tr>
+			<tr>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="time" ng-model=""></td>
+				<td><input type="time" ng-model=""></td>
+			</tr>
+		</table>
+		<table style="width: 100%">
+			<tr>
+				<td>Test</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+
+			</tr>
+			<tr>
+				<td>Result(N/P)*</td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+			</tr>
+		</table>
+		<p>1. Cannabinoids (Marijuana/Tetra Hydro Cannabinoids-THC) 2.
+			Cocaine 3. Opiates (morphine) 4. Amphetamine 5. Barbiturates 6.
+			Benzodiazepines
+		<p>
+		<table style="width: 100%">
+			<tr>
+
+				<td>Urin test for Drug Screen</td>
+				<td><input type="checkbox">Positive</td>
+				<td><input type="checkbox">Negative</td>
+				<td>performed by : <input type="file" ng-model=""><br>
+					 <br>(sign&date)
+				</td>
+				<td>verified by : <input type="file" ng-model=""><br>
+				<!-- 	<hr align="left" width="40%"> --> <br>(sign&date)
+				</td>
+		</table>
+
+	</div>
+	<span>*N- Negative</span> &emsp;&emsp;&emsp;
+	<span>P-Positive</span>
+	<br>
+	<br>
+	<br>
+	<footer><div align="right">
+	<div align="left">Page 3 of 15</div>
+		<br> &emsp;Reviewed by : <input type="file" ng-model=""> <br>
+		&emsp;&emsp;&emsp;(Sign & Date) <br>
+	</div></footer>
+
+</body>
+</html>

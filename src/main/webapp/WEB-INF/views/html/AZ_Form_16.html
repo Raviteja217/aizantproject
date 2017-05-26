@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_16</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#yn {
+	margin-right: 3cm;
+	margin-left: 3cm;
+}
+
+#box {
+	width: 100%;
+	padding: 0px;
+	border: 3px solid black;
+	margin-right: 1cm;
+	margin-left: 0cm;
+
+
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#border {
+	margin: 5px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+th, td {
+	padding: 0px;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+	<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<br>
+
+	<b>T.	<u>ADVERSE EVENT AND CONCOMITANT MEDICATION  RECORD:</u></b>
+	<br>
+	<div id="border">
+		<p>Any Adverse Event (s) Reported></p>
+		<ul>
+			<li>During
+				Study&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="checkbox">Yes<input type="checkbox">No
+				<input type="checkbox">N/A
+			</li>
+			<br>
+			<li>Post study safety
+				sample&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="checkbox">Yes<input type="checkbox">No
+				<input type="checkbox">N/A
+			</li>
+			<br>
+			<li>Check-out
+				ECG&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+				<input type="checkbox">Yes<input type="checkbox">No
+				<input type="checkbox">N/A
+			</li>
+			<br>
+		</ul>
+		<p>If "yes", please refer copy number of respective forms and
+			attach the same to this CRF</p>
+		<b><hr></b>
+		<P>
+			<strong>Concomitant medication given:</strong>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><input
+				type="checkbox">Yes <input type="checkbox">No</span>
+		</P>
+		<p>(If yes, record any concomitant drug treatment during study
+			period and in post study safety assessment)</p>
+		<table style="width: 100%">
+			<tr>
+				<td><strong>Drug Name</strong><br>(Generic or Brand) &<br>
+					<strong>Strength</strong></td>
+				<td><strong>Indication</strong></td>
+				<td><strong>Route</strong> (Oral/ IV/IM/ Topical)</td>
+				<td><strong>Total Daily Dose</strong></td>
+				<td><strong>Frequency</strong><br>(OD/BD/ TDS/ QID)</strong></td>
+				<td><strong>Treatment Start<br> Date
+				</strong></td>
+				<td><strong>Ongoing Treatment</strong><br> (Yes/No)</td>
+				<td><strong>Treatment Stopped <br>Date
+				</strong></td>
+			</tr>
+			<tr>
+				<td><input type="text" style="width: 150px;" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="checkbox">Yes <br> <input
+					type="checkbox">No</td>
+				<td><input type="date" ng-model=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="checkbox">Yes <br> <input
+					type="checkbox">No</td>
+				<td><input type="date" ng-model=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="checkbox">Yes <br> <input
+					type="checkbox">No</td>
+				<td><input type="date" ng-model=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="text" ng-model=""></td>
+				<td><input type="date" ng-model=""></td>
+				<td><input type="checkbox">Yes <br> <input
+					type="checkbox">No</td>
+				<td><input type="date" ng-model=""></td>
+			</tr>
+
+
+		</table>
+		<div align="left">
+			<br> &emsp;Recorded by : <input type="file" ng-model=""> <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+	</div>
+
+		<div align="right">
+			<br> &emsp;Reviewed by :<input type="file" ng-model=""> <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+
+	<div id="box">
+		<center>
+			<h4>
+				<u>Principal Investigator's Declaration</u>
+			</h4>
+		</center>
+
+		<strong><p>I hereby confirm that I have reviewed this
+				Case Report Form and accompanying source documents and find them
+				complete and accurate to the best of my knowledge.</p></strong>
+		<div align="left">
+			<br> &emsp;Principal Investigator : <input type="file" ng-model=""> <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+	</div>
+	<br>
+	<center>
+		<strong>Version History</strong>
+	</center>
+	<table style="width: 100%">
+		<tr>
+			<th>Version No.</th>
+			<th>Supersedes No.&Date</th>
+			<th>Changes Made</th>
+		</tr>
+		<tr>
+			<td>00</td>
+			<td>Nil</td>
+			<td>N/A</td>
+		</tr>
+	</table>
+</body>
+</html>
