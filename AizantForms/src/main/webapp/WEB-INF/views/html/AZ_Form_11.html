@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>AZ_FORM_11</title>
+<style>
+html {
+	border-style: double;
+	margin: 30px;
+}
+
+#leftContainer {
+	float: left;
+}
+
+#rightContainer {
+	float: right;
+}
+
+#centerContainer {
+	float: center;
+}
+
+#border {
+	margin: 5px;
+	padding: 5px;
+	border-style: ridge;
+}
+
+.small {
+	line-height: 80%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-style: ridge;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	text-align: left;
+}
+
+</style>
+</head>
+<body>
+	<div>
+		<img src="http://allianceinstitute.org/placementlogos/aizant.jpg"
+			alt="Aizant" align="right">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="leftContainer">
+		<span>Form No.: CPF070/02</span>
+	</div>
+	<div id="rightContainer">
+		<span>Reference SOP No.: CP079</span>
+	</div>
+	<br>
+
+	<hr>
+<div>
+		<div id="leftContainer">CRF No. :</div>
+		<div align="center">Project No.:</div>
+		<br>
+		<form>
+			Registration No:<input type="text" value="R" /> &emsp;&emsp;
+			&emsp;&emsp; Period No: <input type="text" ng-model=" "/>
+			&emsp;&emsp; &emsp;&emsp; Subject No: <input type="text"
+			ng-model=" "/>
+		</form>
+	</div>
+	<hr>
+	<br>
+	<b>M. <u>SUBJECT COMPLIANCE REPORT</u></b>
+	<br>
+	<br>
+	<table style="border-style: ridge">
+		<tr>
+			<th>Study restrictions</th>
+			<th>Complied</th>
+			<th>Not complied</th>
+			<th>Recorded by (Sign & Date)</th>
+		</tr>
+		<tr>
+			<td>Housing for at least 10.50 hours prior to dosing.</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Fasting for at least 10.00 hours prior to dosing.</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Water restriction for 01 hour before dosing</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Water restriction for 01 hour after dosing</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Subject remained in semi recumbent position for the first
+				4.00 following drug administration except medical examination and/
+				or clinically indicated/for natural exigency.</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Fasting for at least 4.00 hours after dosing</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+		<tr>
+			<td>Housing for at least 24.00 hours after dosing</td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="checkbox" ng-model=" "></td>
+			<td><input type="file" ng-model=" "></td>
+		</tr>
+	</table>
+<br>
+<br>
+
+<p>&emsp;Comments :</p>
+
+<textarea rows="5" cols="175"></textarea>
+<br>
+<br>
+<footer>
+		<div align="left">Page 10 of 15</div>
+		<div align="right">
+			&emsp;Reviewed by : <input type="file" ng-model=" "><br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Sign & Date) <br>
+		</div>
+
+	</footer>
+</body>
+</html>
