@@ -102,8 +102,8 @@ public class AssignFormsController {
 	public ModelAndView deleteassignForms(@RequestParam int id) {
 		System.out.println("hello");
 		assignFormsDAO.deleteAssignForms(id);
-		ModelAndView model2 = new ModelAndView("display_assignForms");
-		return model2;
+		ModelAndView model1 = new ModelAndView("display_assignForms");
+		return model1;
 	}
 	
 }
